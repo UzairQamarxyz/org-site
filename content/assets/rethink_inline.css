@@ -1,0 +1,281 @@
+/* Set variables */
+:root {
+  --font-size-1: 2rem;
+  --font-size-2: 1.5rem;
+  --font-size-3: 1.15rem;
+  --font-size-4: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-xsmall: 0.6rem;
+  --black: #212121;
+  --white: #eeffff;
+  --grey: #4a4a4a;
+  --red: #f07178;
+  --green: #c3e88d;
+  --yellow: #ffcb6b;
+  --blue: #82aaff;
+  --purple: #c792ea;
+  --teal: #89ddff;
+}
+
+/* Set padding and margin */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--black);
+}
+
+/* Header margin */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------- */
+::selection {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+html,
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: var(--font-size-1);
+}
+
+h2 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: var(--font-size-2);
+}
+
+h3 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-3);
+}
+
+h4 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-3);
+}
+
+h5 {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-3);
+}
+
+h1 > .subtitle {
+  font-size: var(--font-size-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.outline-2 > h2,
+#table-of-contents > h2 {
+  text-align: center;
+}
+
+/* Table of contents */
+#table-of-contents ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#table-of-contents .tag {
+  display: none;
+}
+
+.outline-3 {
+  border-bottom: 1px solid #ccc;
+}
+
+.outline-2 > h2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.outline-2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Code */
+pre {
+  margin: 1rem;
+  background-color: var(--grey);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: var(--font-size-small) !important;
+}
+
+.outline-3 {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+}
+
+/* Responsive content positioning */
+@media only screen and (min-width: 750px) /* Large screens */ {
+  .outline-3 {
+    margin: 0vh 10vw;
+  }
+
+  .outline-text-2,
+  #table-of-contents {
+    padding: 0vh 10vw;
+  }
+}
+
+@media only screen and (max-width: 750px) /* Small screens */ {
+  .outline-3 {
+    margin: 0vh 5vw;
+    display: block;
+  }
+
+  .outline-text-2,
+  #table-of-contents {
+    padding: 0vh 5vw;
+  }
+}
+
+blockquote {
+  border-left: 0.2rem solid var(--purple);
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+p,
+pre,
+ol,
+ul,
+table,
+code {
+  color: var(--white);
+}
+
+table,
+blockquote,
+pre,
+ol,
+ul,
+p,
+#postamble {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0a0a0a;
+}
+
+.tag {
+  margin-top: 0.5rem;
+  display: block;
+  color: var(--white);
+  font-size: var(--font-size-xsmall);
+}
+
+.tag > span {
+  font-weight: 400;
+  font-size: 0.6rem;
+  background-color: var(--purple);
+  text-transform: uppercase;
+  border-radius: 2px;
+  width: fit-content;
+  height: auto;
+  padding: 1px 5px;
+  margin: 1px;
+}
+
+/* Stripe table */
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.title {
+  padding: 2vh 5vw;
+}
+
+pre {
+  font-family: "Iosevka SS01 Web", monospace;
+  font-size: var(--font-size-4);
+}
+
+.org-org-meta-line {
+  color: var(--purple);
+}
+
+.org-keyword {
+  color: var(--purple);
+}
+
+a {
+  color: var(--purple);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.todo {
+  color: var(--red);
+  font-weight: 400;
+}
+
+.done {
+  color: var(--purple);
+  font-weight: 400;
+}
+
+/* Postamble */
+#postamble {
+  text-align: center;
+  width: 100%;
+}
+
+#postamble > p {
+  display: inline;
+  font-size: var(--font-size-4);
+}
+
+.outline-text-2,
+.outline-text-3,
+.outline-text-4 {
+  max-width: 100%;
+  overflow-x: auto;
+}
