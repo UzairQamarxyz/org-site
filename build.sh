@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-emacs -Q --script build.el
+\cp -r ./content/assets ./public/assets/ &&
+	emacs -Q --script build.el
