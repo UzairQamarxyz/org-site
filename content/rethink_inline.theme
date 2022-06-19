@@ -1,0 +1,9 @@
+# Turn off default internal styles
+#+OPTIONS: html-style:nil html5-fancy:t
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i");
+#+HTML_HEAD: @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,500i,600,600i");
+#+HTML_HEAD: @font-face{font-family:'Iosevka SS01 Web';font-display:swap;font-weight:400;font-stretch:normal;font-style:normal;src:url('assets/font/iosevka-ss01-regular.woff2') format('woff2')}@font-face{font-family:'Iosevka SS01 Web';font-display:swap;font-weight:400;font-stretch:normal;font-style:italic;src:url('assets/font/iosevka-ss01-italic.woff2') format('woff2')}@font-face{font-family:'Iosevka SS01 Web';font-display:swap;font-weight:600;font-stretch:normal;font-style:normal;src:url('assets/font/iosevka-ss01-semibold.woff2') format('woff2')}@font-face{font-family:'Iosevka SS01 Web';font-display:swap;font-weight:600;font-stretch:normal;font-style:italic;src:url('assets/font/iosevka-ss01-semibolditalic.woff2') format('woff2')}
+#+HTML_HEAD: </style>
+#+HTML_HEAD: <link rel="stylesheet" href="assets/rethink_inline.css" />
