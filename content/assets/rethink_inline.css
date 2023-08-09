@@ -6,15 +6,15 @@
   --font-size-4: 1rem;
   --font-size-small: 0.8rem;
   --font-size-xsmall: 0.6rem;
-  --black: #212121;
-  --white: #eeffff;
+  --black: #1f1f28;
+  --white: #dcd7ba;
   --grey: #4a4a4a;
-  --red: #f07178;
-  --green: #c3e88d;
-  --yellow: #ffcb6b;
-  --blue: #82aaff;
-  --purple: #c792ea;
-  --teal: #89ddff;
+  --red: #c34043;
+  --green: #76946a;
+  --yellow: #c0a36e;
+  --blue: #7e9cd8;
+  --purple: #957fb8;
+  --teal: #6a9589;
 }
 
 /* Set padding and margin */
@@ -49,36 +49,36 @@ h4 {
 
 html,
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", Helvetica, sans-serif;
   font-weight: 600;
   font-size: var(--font-size-1);
 }
 
 h2 {
-  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", Helvetica, sans-serif;
   font-weight: 500;
   font-size: var(--font-size-2);
 }
 
 h3 {
-  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", Helvetica, sans-serif;
   font-weight: 400;
   font-size: var(--font-size-3);
 }
 
 h4 {
-  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", Helvetica, sans-serif;
   font-weight: 400;
   font-size: var(--font-size-3);
 }
 
 h5 {
-  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-family: "Cormorant Garamond", Helvetica, sans-serif;
   font-weight: 400;
   font-size: var(--font-size-3);
 }
@@ -232,7 +232,7 @@ tr:nth-child(even) {
 }
 
 pre {
-  font-family: "Iosevka SS01 Web", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: var(--font-size-4);
 }
 

@@ -1,22 +1,11 @@
-#+title: Project
-#+description: Sample ORG HTML Site
+#+title: UzairQamaxyz
+#+description: BlogSite
 #+author: Uzair Qamar
 #+setupfile: rethink_inline.theme
 #+options: num:nil
 
-* EXPORTING
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras metus massa, dapibus id blandit mollis, gravida vitae eros. Maecenas placerat mollis metus, sit amet iaculis quam consequat vel. Nulla turpis justo, commodo vitae pharetra vel, cursus ac leo. Sed tempor rhoncus urna, non vestibulum arcu accumsan ac. Aliquam erat volutpat. Pellentesque et leo justo. Donec pulvinar dignissim arcu id tincidunt. Vestibulum nec sapien at velit semper venenatis et nec turpis. Quisque nisi mi, condimentum sed consectetur non, ornare sed turpis. Nam vehicula tristique lacus, id sollicitudin magna maximus eget. Suspendisse eu venenatis nisl. Duis odio est, pretium id convallis pellentesque, ultricies eget odio. Integer vel urna lacinia, ullamcorper magna vel, tristique magna. Aliquam mi felis, vestibulum sed dui sit amet, scelerisque volutpat mauris.
-+ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-+ Donec ornare mauris nec dui posuere, sed facilisis lorem eleifend.
-+ Nulla eget tellus eget nibh tempus ornare.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras metus massa, dapibus id blandit mollis, gravida vitae eros. Maecenas placerat mollis metus, sit amet iaculis quam consequat vel. Nulla turpis justo, commodo vitae pharetra vel, cursus ac leo. Sed tempor rhoncus urna, non vestibulum arcu accumsan ac. Aliquam erat volutpat. Pellentesque et leo justo. Donec pulvinar dignissim arcu id tincidunt. Vestibulum nec sapien at velit semper venenatis et nec turpis. Quisque nisi mi, condimentum sed consectetur non, ornare sed turpis. Nam vehicula tristique lacus, id sollicitudin magna maximus eget. Suspendisse eu venenatis nisl. Duis odio est, pretium id convallis pellentesque, ultricies eget odio. Integer vel urna lacinia, ullamcorper magna vel, tristique magna. Aliquam mi felis, vestibulum sed dui sit amet, scelerisque volutpat mauris.
+* Introduction
+snaoeuntsoeustnhoaeusnthoeusnthaoeusnth
 
-#+begin_src python :results output
-for item in ["asd", "qwe", "poi"]:
-    print("item =", item)
-#+end_src
-
-#+RESULTS:
-: item = asd
-: item = qwe
-: item = poi
+* AWS
+** [[file:20230719170357-eks.org][Notes on EKS]]
