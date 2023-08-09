@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       7953663e-8a6b-4757-985f-cfd890e3315c
-:END:
 #+title: EKS
 #+description: Notes on EKS
 #+author: Uzair Qamar
@@ -28,8 +25,9 @@ https://aws.amazon.com/blogs/containers/de-mystifying-cluster-networking-for-ama
 * Authentication & Authorization
 AWS EKS uses IAM to provide authentication to your clusters. AWS IAM only handles the authentication to the cluster, authorization is handled by RBAC inside the cluster.
 
-#+ATTR_ORG: :width 1200
-[[file:media/EKS/authentication_authorization.png][Authentication & Authorization]]
+#+Caption: Authentication & Authorization flow
+#+ATTR_HTML: width="200" title="Authentication & Authorization flow"
+[[./assets/media/EKS/authentication_authorization.png]]
 
 ** Authentication
 There are different ways to authenticate a request to the kube-apiserver service, e.g. Bearer Tokens, X.509 Certificates, OIDC, etc. EKS has native support for [[https://kubernetes.io/docs/reference/access-authn-authz/authentication/#webhook-token-authentication][webhook tokens & OIDC]] at the time of writing.
@@ -94,22 +92,25 @@ data:
 
 * Addons
 ** VPC CNI Plugin
-#+ATTR_ORG: :width 1200
-[[https://aws.github.io/aws-eks-best-practices/networking/vpc-cni/image.png][VPC CNI]]
 It's a Container Network Interface for your EKS cluster. It allows the pods in your cluster to be assigned IPs from the VPC directly via the ENI attached to the nodes. Since each ENI can have a limited amount of IPs assigned to it and each node can have a limited amount of ENIs attached, this limits the amount of pods you can run on a node. Check[[https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt][ here]] to see how many pods can be allocated for each node type.
 This plugin creates a *primary ENI* and assigns a primary IPs to the ENI. These primary IPs are used by the node itself and the pods running on it in hostNetwork mode. When the maximum number of IPs are reached for an ENI, the plugin creates another ENI and attaches to the node. This is done until the node runs out of resources to spare for further ENIs.
 In order to speed up the networking process, some "warm" ENIs may be ready in advance.
+#+Caption: VPC CNI Plugin Flow
+#+ATTR_HTML: width="200" title="VPC CNI Plugin Flow"
+[[https://aws.github.io/aws-eks-best-practices/networking/vpc-cni/image.png]]
 *** Configuration
 The number of ENIs and the IP addresses in a pool are configured through the ~WARM_ENI_TARGET~, ~WARM_IP_TARGET~ and ~MINIMUM_IP_TARGET~.
 + *WARM_ENI_TARGET*: The number of secondary ENIs attached to the node on standby. An ENI is considered "warm" when its IP isn't associated with a pod. After the IP is associated, another ENI is created and attached as a "warm" ENI in order to maintain the targeted warm ENIs.
 + *WARM_IP_TARGET*: The number of IPs that may be available without requiring an additional ENI.
 + *MINIMUM_IP_TARGET*: The minimum number of IP addresses to be allocated at any time.
 *** Prefix Assignment
-#+ATTR_ORG: :width 1200
-[[https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/image.png][Prefix Assignment Mode]]
+#+Caption: VPC CNI Prefix Assignment Mode
+#+ATTR_HTML: width="200" title="VPC CNI Prefix Assignment Mode"
+[[https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/image.png]]
 [[https://docs.aws.amazon.com/eks/latest/userguide/cni-increase-ip-addresses.html][Prefix assignment mode]] enables us to run more pods on *AWS Nitro* based instance types. Now instead of assigning individual IPs to the ENI, the ENI gets assigned /28 IP prefixes which increases the IP pool. This allows us to have a larger IP pool while the number of ENIs stay the same.
-[[https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/image-2.jpeg][Prefix Assignment Flow]]
-
+#+Caption: VPC CNI Prefix Assignment Flow
+#+ATTR_HTML: width="200" title="VPC CNI Prefix Assignment Flow"
+[[https://aws.github.io/aws-eks-best-practices/networking/prefix-mode/image-2.jpeg]]
 
 ** CoreDNS
 CoreDNS is a flexible and extensible DNS server that can serve for the Kubernetes cluster DNS. It is installed by default. It provides name resolution for all the pods in your cluster.
