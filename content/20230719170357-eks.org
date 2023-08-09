@@ -2,6 +2,10 @@
 :ID:       7953663e-8a6b-4757-985f-cfd890e3315c
 :END:
 #+title: EKS
+#+description: Notes on EKS
+#+author: Uzair Qamar
+#+setupfile: rethink_inline.theme
+#+options: num:nil
 
 * Introduction
 AWS EKS (Elastic Kubernetes Service) is an AWS managed service to run Kubernetes in the AWS cloud.
