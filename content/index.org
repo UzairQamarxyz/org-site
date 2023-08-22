@@ -1,7 +1,6 @@
 #+title: UzairQamaxyz
 #+description: BlogSite
 #+author: Uzair Qamar
-#+setupfile: rethink_inline.theme
 #+options: num:nil
 
 * Introduction
