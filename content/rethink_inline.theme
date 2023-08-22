@@ -1,9 +1,0 @@
-# Turn off default internal styles
-#+OPTIONS: html-style:nil html5-fancy:t
-
-#+HTML_HEAD: <style type="text/css">
-#+HTML_HEAD: @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,500,500i,600,600i");
-#+HTML_HEAD: @import url("https://fonts.googleapis.com/css?family=Manrope:400,400i,500,500i,600,600i");
-#+HTML_HEAD: @import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:400,400i,500,500i,600,600i");
-#+HTML_HEAD: </style>
-#+HTML_HEAD: <link rel="stylesheet" href="assets/rethink_inline.css" />
