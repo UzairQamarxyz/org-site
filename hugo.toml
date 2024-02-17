@@ -24,7 +24,7 @@ enableEmoji = true
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   description = "UzairQamarxyz"
-  homeSubtitle = "DevOps Engineer // Church of Emacs"
+  # homeSubtitle = ""
 
   bgImg = ""
   images = [""]
