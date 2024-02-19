@@ -1,9 +1,9 @@
 +++
 title = "Linux Setup: Window Manager (Suckless Edition)"
 author = ["Uzair Qamar"]
-lastmod = 2024-02-18T02:20:45+05:00
+lastmod = 2024-02-19T14:35:14+05:00
 tags = ["linux", "dwm", "dwmblocks", "dmenu"]
-draft = true
+draft = false
 +++
 
 ## Overview {#overview}
