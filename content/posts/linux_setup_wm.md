@@ -1,7 +1,7 @@
 +++
 title = "Linux Setup: Window Manager (Suckless Edition)"
 author = ["Uzair Qamar"]
-lastmod = 2024-02-19T14:35:14+05:00
+lastmod = 2024-02-19T15:38:05+05:00
 tags = ["linux", "dwm", "dwmblocks", "dmenu"]
 draft = false
 +++
@@ -9,16 +9,18 @@ draft = false
 ## Overview {#overview}
 
 I've created this blog for my own sanity, I have been using these tools for a long time now but haven't actually bothered documenting on what modifications I have made and why I have made them. This sometimes comes to bite me in the back, especially when I migrate to a new system.
-Here's what my Desktop looks like.
 
-{{< figure src="/images/rice.png" caption="<span class=\"figure-number\">Figure 1: </span>Current Rice" class="big" >}}
+At the time of writing, this is what my desktop looks like. Here I'm using the [kanagawa](https://github.com/rebelot/kanagawa.nvim/) colorscheme. I'll talk about `ricing` in another blog.
+
+{{< figure src="/images/2024-02-19_15-31.png" caption="<span class=\"figure-number\">Figure 1: </span>Current Rice" class="big" >}}
 
 
 ### Window Manager [dwm] {#window-manager-dwm}
 
 [Source](https://github.com/uzairqamarxyz/dwm.git)
 
-I don't use a Desktop Manager because of their over reliance on mouse centric actions, rather I use a heavily patched version of [dwm](https://dwm.suckless.org/), a dynamic tiling Window Manager.
+I don't use a Desktop Manager due to their excessive dependence on mouse-centric actions. Instead, I opt for a extensively patched version of  [dwm](https://dwm.suckless.org/), a dynamic tiling window manager. dwm allows me to work in a keyboard-centric environment, resulting in greater speed and efficiency.
+
 Here are some patches &amp; modifications I use.
 
 
