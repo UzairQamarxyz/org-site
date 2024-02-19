@@ -1,0 +1,127 @@
+// Colors
+
+$fujiWhite: #dcd7ba;
+$old-white: #c8c093;
+
+$sumiInk-0: #16161d;
+$sumiInk-1b: #181820;
+$sumiInk-1: #1f1f28;
+$sumiInk-2: #2a2a37;
+$sumiInk-3: #363646;
+$sumiInk-4: #54546d;
+
+$waveBlue-1: #223249;
+$waveBlue-2: #2d4f67;
+$waveAqua1: #6a9589;
+$waveAqua2: #7aa89f;
+
+$winterGreen: #2b3328;
+$winterYellow: #49443c;
+$winterRed: #43242b;
+$winterBlue: #252535;
+
+$autumnGreen: #76946a;
+$autumnRed: #c34043;
+$autumnYellow: #dca561;
+
+$samuraiRed: #e82424;
+$roninYellow: #ff9e3b;
+
+$dragonBlue: #658594;
+$fujiGray: #727169;
+$springViolet1: #938aa9;
+$oniViolet: #957fb8;
+$crystalBlue: #7e9cd8;
+$springViolet2: #9cabca;
+$springBlue: #7fb4ca;
+$lightBlue: #a3d4d5;
+$springGreen: #98bb6c;
+$boatYellow1: #938056;
+$boatYellow2: #c0a36e;
+$carpYellow: #e6c384;
+$sakuraPink: #d27e99;
+$waveRed: #e46876;
+$peachRed: #ff5d62;
+$surimiOrange: #ffa066;
+$katanaGray: #717c7c;
+$comet: #54536d;
+
+$color0: #090618;
+$color1: #c34043;
+$color2: #76946a;
+$color3: #c0a36e;
+$color4: #7e9cd8;
+$color5: #957fb8;
+$color6: #6a9589;
+$color7: #c8c093;
+$color8: #727169;
+$color9: #e82424;
+$color10: #98bb6c;
+$color11: #e6c384;
+$color12: #7fb4ca;
+$color13: #938aa9;
+$color14: #7aa89f;
+$color15: #dcd7ba;
+
+$background: #1f1f28;
+$foreground: #dcd7ba;
+$theme: #7aa89f;
+$text: #dcd7ba;
+$light-grey: $background;
+$dark-grey: $sumiInk-1;
+$highlight-grey: #54536d;
+$midnightblue: #16161d;
+$typewriter: #e82424;
+
+// Fonts
+$heading-fonts: "Playfair Display", "Times New Roman", Times, serif;
+$body-fonts: "Source Sans 3", "Trebuchet MS", Verdana, "Verdana Ref", "Segoe UI",
+  Candara, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma,
+  sans-serif;
+$code-fonts: Consolas, "Andale Mono WT", "Andale Mono", Menlo, Monaco,
+  "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+  "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New",
+  Courier, "YaHei Consolas Hybrid", monospace, "Segoe UI Emoji", "PingFang SC",
+  "Microsoft YaHei";
+
+//Admonition
+$admonition-background: (
+  "note": rgba(68, 138, 255, 0.1),
+  "info": rgba(0, 184, 212, 0.1),
+  "tip": rgba(0, 191, 165, 0.1),
+  "success": rgba(0, 200, 83, 0.1),
+  "warning": rgba(255, 145, 0, 0.1),
+  "failure": rgba(255, 82, 82, 0.1),
+  "danger": rgba(255, 23, 68, 0.1),
+  "bug": rgba(245, 0, 87, 0.1),
+) !default;
+
+$admonition-color: (
+  "note": #448aff,
+  "info": #00b8d4,
+  "tip": #00bfa5,
+  "success": #00c853,
+  "warning": #ff9100,
+  "failure": #ff5252,
+  "danger": #ff1744,
+  "bug": #f50057,
+) !default;
+
+// Mixins
+@mixin dimmed {
+  opacity: 0.6;
+}
+
+@mixin aTag {
+  a {
+    word-wrap: break-word;
+    border: none;
+    box-shadow: inset 0 -4px 0 $theme;
+    transition-property: box-shadow;
+    transition-duration: 0.1s;
+
+    &:hover {
+      box-shadow: inset 0 -1em 0 $theme;
+    }
+  }
+}
